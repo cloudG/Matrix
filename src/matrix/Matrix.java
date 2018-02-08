@@ -17,6 +17,10 @@ public class Matrix {
         this.matrix = matrix;
     }
 
+    public Matrix(int m, int n) {
+        this.matrix = new double[m][n];
+    }
+
     public double get(int m, int n) {
         return matrix[m][n];
     }
@@ -87,10 +91,6 @@ public class Matrix {
         return A;
     }
 
-    /**
-     *
-     * @param num
-     */
     public void print(int num) {
         System.out.println("[");
         for (int i = 0; i < matrix.length; i++) {
